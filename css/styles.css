@@ -1,0 +1,248 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Fondo con imagen de productos */
+body {
+  background: url("/JAVASCRIPT/GIT/tu_compra/img/supermercado.jpg") no-repeat
+    center center/cover;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Carrito */
+
+.carrito {
+  position: absolute;
+  top: 0px;
+  left: 95px;
+  width: 50px;
+  height: auto;
+}
+
+/* Contenedor principal */
+.container {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  width: 90%;
+  max-width: 600px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Entrada de productos */
+.añadir_producto {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.prod {
+  flex: 3;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+}
+
+.numb {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+  max-width: 100px;
+}
+
+.añadir_producto button {
+  background: #28a745;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+.añadir_producto button:hover {
+  background: #218838;
+}
+
+/* Lista de productos */
+#lista_productos {
+  list-style: none;
+  margin-top: 20px;
+  padding: 0;
+}
+
+#lista_productos li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background: #fff;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Alineación de producto y cantidad a la izquierda */
+#lista_productos li .producto-info {
+  display: flex;
+  flex: 1;
+  justify-content: flex-start;
+}
+
+#lista_productos li .producto-info span {
+  margin-right: 10px;
+}
+
+/* Alineación de precio y botón de compra a la derecha */
+#lista_productos li .precio-info {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Estilo de los botones */
+#lista_productos li button {
+  background: #3599e5;
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+#lista_productos li button:hover {
+  background: #2303b0;
+}
+
+#lista_ticket li button {
+  background: #e53535;
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background 0.3s;
+  font-size: 12px;
+  height: auto;
+  min-width: 70px;
+  text-align: center;
+}
+
+#lista_ticket li button:hover {
+  background: #f00505d9;
+}
+
+/* Estilo de la entrada de precio */
+.numb2 {
+  width: 110px;
+  text-align: right;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 5px;
+  margin-right: 10px;
+}
+
+/* Ticket de compra */
+.ticket {
+  background: rgba(229, 234, 239, 0.9);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  width: 70%;
+  max-width: 400px;
+  margin-top: 20px;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+#lista_ticket {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+#lista_ticket li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background: #fff;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#lista_ticket li .ticket_info {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+}
+
+#lista_ticket li .ticket_info button {
+  background: #e53535;
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background 0.3s;
+  font-size: 12px;
+  height: auto;
+  min-width: 70px;
+  text-align: center;
+}
+
+#lista_ticket li .ticket_info button:hover {
+  background: #f00505d9;
+}
+
+/* Total del ticket */
+h4 {
+  font-style: italic;
+  font-size: 18px;
+  margin-top: 10px;
+  text-align: right;
+  color: #333;
+}
+
+/* Cinta */
+.cinta {
+  background-color: darkolivegreen;
+  font-family: "Great Vibes", cursive;
+  text-align: center;
+  color: antiquewhite;
+  margin-top: 90px;
+  height: 900px;
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  font-size: 40px;
+  font-weight: bold;
+}
