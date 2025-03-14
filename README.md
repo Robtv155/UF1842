@@ -11,7 +11,7 @@
 
 - **Generación de Tickets**: Crea tickets detallados con los productos adquiridos, incluyendo cantidades, precios y un total de los productos adquiridos. Estas entradas se pueden eliminar con el botón rojo, si finalmente decidimos no comprar el producto.
 
-- **Interfaz amigable**: Diseño simple y fácil de usar para una experiencia fluida. El gráfico del carrito nos permite una confirmación visual de una compra relizada, con su correspondiente animación.
+- **Interfaz amigable**: Diseño simple y fácil de usar para una experiencia fluida. El gráfico del carrito nos permite una confirmación visual de una compra relizada, con su correspondiente animación. Además incorpora características de accesibilidad: como un modo oscuro al que se accede en un botón en la esquina superior derecha, un selector de idioma y navegación mediante pulsaciones de tabulador.
 
 ## Tecnologías Usadas
 

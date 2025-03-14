@@ -8,7 +8,7 @@
   </head>
   <body>
     <header>
-      <h1 class="cinta">TU COMPRA</h1>
+      <h1 class="cinta" id="titulo">TU COMPRA</h1>
     </header>
 
     <!-- Carrito en SVG -->
@@ -103,9 +103,19 @@
       </svg>
     </div>
 
+    <button class="modo_btn" id="modo_btn">🌙</button>
+    <select class="lenguaje" id="language">
+      <option value="es">Castellano</option>
+      <option value="en">English</option>
+      <option value="fr">Français</option>
+      <option value="de">Deutsch</option>
+      <option value="it">Italiano</option>
+      <option value="kl">Klingon</option>
+    </select>
+
     <!-- Div para la lista de la compra -->
     <div class="container">
-      <h1>Lista de la Compra</h1>
+      <h1 id="contenedor">Lista de la Compra</h1>
       <div class="añadir_producto">
         <input
           class="prod"
@@ -119,17 +129,19 @@
           id="cantidad"
           placeholder="Cantidad"
         />
-        <button onclick="agrega_producto()">Agregar</button>
+        <button id="agregar" onclick="agrega_producto()">Agregar</button>
       </div>
       <ul id="lista_productos"></ul>
     </div>
 
     <!-- Div para el ticket -->
     <div class="ticket">
-      <h2>Ticket de Compra</h2>
+      <h2 id="ticket">Ticket de Compra</h2>
       <ul id="lista_ticket"></ul>
       <hr />
-      <h4 style="font-style: italic">TOTAL: <span id="total">0</span> €</h4>
+      <h4 id="totalt" style="font-style: italic">
+        TOTAL: <span id="total">0</span> €
+      </h4>
     </div>
 
     <!-- Script -->

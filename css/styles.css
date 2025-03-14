@@ -242,6 +242,109 @@ h4 {
   align-items: center;
   writing-mode: vertical-rl;
   text-orientation: upright;
-  font-size: 40px;
+  font-size: 28px;
   font-weight: bold;
+}
+
+/* Botón modo */
+.modo_btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  width: 30px;
+  height: 30px;
+  background-color: #333;
+  border-radius: 25%;
+}
+
+/* Modo oscuro */
+
+.modo_oscuro {
+  background: url("/img/supermercado_dark.jpg") no-repeat center center/cover;
+  color: white;
+}
+
+.modo_oscuro .modo_btn {
+  background-color: rgb(8, 172, 242);
+}
+
+.modo_oscuro .container {
+  background: rgba(21, 2, 57, 0.9);
+  box-shadow: 0 4px 10px rgba(246, 237, 237, 0.8);
+}
+
+.modo_oscuro h1 {
+  color: #cec6c6;
+}
+
+.modo_oscuro .añadir_producto button {
+  background: #28a745;
+  color: rgba(21, 2, 57);
+  border: rgba(229, 234, 239);
+}
+
+.modo_oscuro .añadir_producto input {
+  background-color: #030a05;
+  color: rgb(255, 249, 250);
+  border: 1px solid rgba(229, 234, 239);
+}
+
+.modo_oscuro #lista_productos li {
+  border: 1px solid #ddd;
+  background: #000;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.modo_oscuro #lista_productos li button {
+  color: black;
+}
+
+.modo_oscuro #lista_productos li input {
+  border: 1px solid #ddd;
+  background: #000;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  color: rgb(255, 249, 250);
+}
+
+.modo_oscuro .cinta {
+  color: black;
+}
+
+.modo_oscuro .ticket {
+  background: rgb(30, 0, 0);
+  box-shadow: 0 4px 10px rgba(247, 245, 245, 0.2);
+  color: #d08f8f;
+}
+
+.modo_oscuro #lista_ticket li button {
+  color: black;
+}
+
+.modo_oscuro #lista_ticket {
+  background-color: #333;
+  color: #ccc;
+}
+
+.modo_oscuro #lista_ticket li {
+  background: #080808;
+  box-shadow: 2px 2px 5px rgba(250, 248, 248, 0.1);
+}
+
+.modo_oscuro .ticket h2 {
+  color: rgb(227, 198, 198);
+}
+.modo_oscuro .ticket h4 {
+  color: rgb(227, 198, 198);
+}
+
+/* Selector traducción */
+
+.lenguaje {
+  position: absolute;
+  top: 50px;
+  right: 20px;
+  width: 90px;
+  height: 30px;
+  background-color: #abe0e8;
+  border-radius: 15%;
 }
