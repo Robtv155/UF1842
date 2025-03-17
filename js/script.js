@@ -109,10 +109,13 @@ function agrega_producto() {
 function aplicar_traducciones() {
   let idioma = document.getElementById("language").value;
 
-  // Actualizar elementos traducidos
+  // Actualizar elementos traducidos sin afectar el contenido dinámico
   let productos = document.querySelectorAll(".producto-info");
   productos.forEach(function (producto) {
-    producto.textContent = textos[idioma].añadir_producto;
+    if (producto.innerHTML === "") {
+      // Evitar cambiar el nombre del producto
+      producto.textContent = textos[idioma].añadir_producto;
+    }
   });
 
   let cantidad = document.querySelectorAll(".precio-info input");
